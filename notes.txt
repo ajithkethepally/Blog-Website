@@ -1,0 +1,31 @@
+router.get("/", (req,res)=>{
+  // const blogs = [
+  // {
+  //   title: "RRR",
+  //   snippet:
+  //     "A cinematic masterpiece by SSR, acclaimed by the international audience for its excellent storytelling.",
+  // },
+  // {
+  //   title: "C/O Kancharapalem",
+  //   snippet:
+  //     "A beautiful anthology about love that people of all ages can connect to and with a great ending.",
+  // },
+  // {
+  //   title: "Mathu Vadalara",
+  //   snippet:
+  //     "Sexy thiller with finest cinematography and lot of creative visuals. It will definitely get you highh :)",
+  // },
+  // {
+  //   title: "Cinema Bandi",
+  //   snippet:
+  //     "A tale that captures the purity of the people from village. Story is about a bunch of villagers who discovers a camera by chance and the innocent activities they do with it.",
+  // },
+  // ];
+    Blog.find()
+      .sort({ createdAt: 1 }) //recent one will be first
+      .then((result) => {
+        res.render("index", { title: "All Blogs", blogs: result });
+      })
+      .catch((err) => console.log(err));
+  
+});

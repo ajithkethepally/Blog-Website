@@ -27,13 +27,13 @@ Follow these steps to get the Blog Website up and running:
 Here are some screenshots showcasing different sections of the Blog Website:
 
 - **Home Page**
-  ![Home Page](screenshot/home.PNG)
+  ![Home Page](screenshot/home.png)
 
 - **Create Blog**
-  ![Create Blog](screenshot/create-blog.PNG)
+  ![Create Blog](screenshot/create-blog.png)
 
 - **Blog Details**
-  ![Blog Details](screenshot/about-blog.PNG)
+  ![Blog Details](screenshot/about-blog.png)
 
 ## Conclusion
 
